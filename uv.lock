@@ -266,6 +266,20 @@ wheels = [
 ]
 
 [[package]]
+name = "minergy"
+version = "0.1.0"
+source = { editable = "../minergy" }
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "mypy", specifier = ">=1.10" },
+    { name = "pytest", specifier = ">=8.0" },
+    { name = "ruff", specifier = ">=0.5" },
+]
+
+[[package]]
 name = "mypy"
 version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -603,6 +617,7 @@ source = { editable = "." }
 dependencies = [
     { name = "anyio" },
     { name = "httpx", extra = ["socks"] },
+    { name = "minergy" },
     { name = "packaging" },
     { name = "pillow" },
     { name = "pydantic" },
@@ -623,6 +638,7 @@ dev = [
 requires-dist = [
     { name = "anyio", specifier = ">=4.0" },
     { name = "httpx", extras = ["socks"], specifier = ">=0.27" },
+    { name = "minergy", editable = "../minergy" },
     { name = "packaging", specifier = ">=24.0" },
     { name = "pillow", specifier = ">=11.0" },
     { name = "pydantic", specifier = ">=2.11" },

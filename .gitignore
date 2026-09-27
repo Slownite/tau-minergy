@@ -6,9 +6,11 @@ dist/
 wheels/
 *.egg-info
 .mypy_cache/
+.pytest_cache/
+.ruff_cache/
 
 # Virtual environments
-.venv
+.venv/
 
 # Hugo docs site (website/)
 website/public/
